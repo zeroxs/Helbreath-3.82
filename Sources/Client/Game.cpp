@@ -8759,7 +8759,9 @@ CP_SKIPMOUSEBUTTONSTATUS:;
 			int dYc = m_pPlayer->m_sPlayerY - m_pMapData->m_sPivotY;
 			if (dXc >= 0 && dXc < MAPDATASIZEX && dYc >= 0 && dYc < MAPDATASIZEY) {
 				int8_t animAction = m_pMapData->m_pData[dXc][dYc].m_animation.cAction;
-				if (animAction == DEF_OBJECTATTACK || animAction == DEF_OBJECTATTACKMOVE || animAction == DEF_OBJECTMAGIC)
+				if (animAction == DEF_OBJECTATTACK || animAction == DEF_OBJECTATTACKMOVE ||
+					animAction == DEF_OBJECTMAGIC || animAction == DEF_OBJECTGETITEM ||
+					animAction == DEF_OBJECTDAMAGE || animAction == DEF_OBJECTDAMAGEMOVE)
 					return;
 			}
 			cDir = CMisc::cGetNextMoveDir(m_pPlayer->m_sPlayerX, m_pPlayer->m_sPlayerY, indexX, indexY);
