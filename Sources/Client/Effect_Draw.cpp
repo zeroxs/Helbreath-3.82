@@ -522,7 +522,7 @@ void EffectManager::DrawEffectsImpl()
 
 			case EffectType::GATE_APOCALYPSE: // Gate (apocalypse)
 				cTempFrame = m_pEffectList[i]->m_cFrame;
-				(*m_pEffectSpr)[101]->Draw(320, 480, cTempFrame, SpriteLib::DrawParams::AdditiveNoColorKey());
+				(*m_pEffectSpr)[101]->Draw(LOGICAL_WIDTH() / 2, LOGICAL_HEIGHT(), cTempFrame, SpriteLib::DrawParams::AdditiveNoColorKey());
 				break;
 
 			case EffectType::MAGIC_MISSILE_FLYING: // Magic Missile

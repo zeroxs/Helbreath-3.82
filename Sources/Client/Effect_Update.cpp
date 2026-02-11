@@ -820,8 +820,8 @@ void EffectManager::UpdateEffectsImpl()
 						AddEffectImpl(EffectType::CRACK_OBLIQUE, m_pEffectList[i]->m_sX - 10, m_pEffectList[i]->m_sY + 70, 0, 0, 0, 0);
 						AddEffectImpl(EffectType::CRACK_HORIZONTAL, m_pEffectList[i]->m_sX - 10, m_pEffectList[i]->m_sY + 75, 0, 0, 0, 0);
 						AddEffectImpl(EffectType::STEAMS_SMOKE, m_pEffectList[i]->m_sX - 7, m_pEffectList[i]->m_sY + 27, 0, 0, 0, 0);
-						AddEffectImpl(EffectType::SHOTSTAR_FALL_2, (rand() % 160) + 320, (rand() % 120) + 240, 0, 0, 0, 1);
-						AddEffectImpl(EffectType::SHOTSTAR_FALL_3, (rand() % 160) + 320, (rand() % 120) + 240, 0, 0, 0, 1);
+						AddEffectImpl(EffectType::SHOTSTAR_FALL_2, (rand() % (LOGICAL_WIDTH() / 4)) + LOGICAL_WIDTH() / 2, (rand() % (LOGICAL_HEIGHT() / 4)) + LOGICAL_HEIGHT() / 2, 0, 0, 0, 1);
+						AddEffectImpl(EffectType::SHOTSTAR_FALL_3, (rand() % (LOGICAL_WIDTH() / 4)) + LOGICAL_WIDTH() / 2, (rand() % (LOGICAL_HEIGHT() / 4)) + LOGICAL_HEIGHT() / 2, 0, 0, 0, 1);
 						delete m_pEffectList[i];
 						m_pEffectList[i] = 0;
 					}
@@ -838,7 +838,7 @@ void EffectManager::UpdateEffectsImpl()
 						AddEffectImpl(EffectType::EXPLOSION_FIRE_APOCALYPSE, m_pEffectList[i]->m_sX + 110, m_pEffectList[i]->m_sY + 120, 0, 0, 0, 0);
 						AddEffectImpl(EffectType::CRACK_OBLIQUE, m_pEffectList[i]->m_sX - 10, m_pEffectList[i]->m_sY + 70, 0, 0, 0, 0);
 						AddEffectImpl(EffectType::CRACK_HORIZONTAL, m_pEffectList[i]->m_sX - 10, m_pEffectList[i]->m_sY + 75, 0, 0, 0, 0);
-						AddEffectImpl(EffectType::SHOTSTAR_FALL_3, (rand() % 160) + 320, (rand() % 120) + 240, 0, 0, 0, 1);
+						AddEffectImpl(EffectType::SHOTSTAR_FALL_3, (rand() % (LOGICAL_WIDTH() / 4)) + LOGICAL_WIDTH() / 2, (rand() % (LOGICAL_HEIGHT() / 4)) + LOGICAL_HEIGHT() / 2, 0, 0, 0, 1);
 						delete m_pEffectList[i];
 						m_pEffectList[i] = 0;
 					}
