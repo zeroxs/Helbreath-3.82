@@ -4110,7 +4110,10 @@ void CGame::EnableDialogBox(int iBoxID, int cType, int sV1, int sV2, char* pStri
 		}
 		break;
 
-	case DialogBoxId::Magic: // Magic Dialog
+	case DialogBoxId::CharacterInfo:
+	case DialogBoxId::Inventory:
+	case DialogBoxId::ChatHistory:
+	case DialogBoxId::Magic:
 		break;
 
 	case DialogBoxId::ItemDropConfirm:
